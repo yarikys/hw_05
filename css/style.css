@@ -528,3 +528,124 @@ body{
 .footer_main {
 	margin-right: 80px;
 }
+
+.ourwork_item {
+    position: relative;
+}
+
+.ourwork_aside {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    color: #fff;
+}
+
+.section_completedworks {
+    color: var(--portfoliosection);
+    padding-top: 50px;
+    padding-bottom: 64px;
+}
+
+.completedworks_title {
+    display: none;
+}
+
+.completedworks_list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.completedworks_item {
+    background-color: var(--white);
+    width: 370px;
+    height: 404px;
+}
+
+.completedworks_item:hover .completedworks_aside {
+    transform: translatey(-100%);
+}
+
+.completedworks_item:hover .completedworks_desk {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.completedworks_foto {
+    display: block;
+}
+
+.completedworks_icon {
+    position: relative;
+    height: 298px;
+    width: 370;
+
+    overflow: hidden;
+}
+
+.completedworks_aside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    transition: transform 250ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completedworks_subtext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-left: 24px;
+
+}
+
+.completedworks_desk {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none; 
+    transition: box-shadow 250ms;
+}
+
+.completedworks_subtitle {
+    width: 322px;
+    height: 36px;
+    font-weight: 700;
+    color: var(--darkgray);
+    line-height: 2;
+    font-size: 18px;
+}
+
+.completedworks_text {
+    margin: 0;
+    width: 322px;
+    height: 30px;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 1.87;
+    font-size: 16px;
+}
