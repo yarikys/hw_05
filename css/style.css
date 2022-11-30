@@ -396,7 +396,7 @@ body{
 }
 
 .link_svg:hover svg {
-    fill: var(--blue);
+    fill: var(--white);
 }
 
 .link_svg:focus {
