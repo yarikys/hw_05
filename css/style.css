@@ -436,7 +436,7 @@ body{
     flex-wrap: wrap;
 }
 
-.costimers_link {
+.costomers_link {
     height: 92px;
     width: 170px;
     display: flex;
@@ -446,20 +446,20 @@ body{
     border-radius: 4px;
 }
 
-.costimers_link:hover{
+.costomers_link:hover{
     border: 1px solid var(--active-color);
 }
 
-.costimers_link:hover svg {
+.costomers_link:hover svg{
     fill: var(--active-color);
 }
 
-.costimers_link:focus{
+.costomers_link:focus{
     border: 1px solid var(--active-color);
 }
 
-.costimers_link:focus svg {
-    fill: var(--white);
+.costomers_link:focus svg{
+    fill: var(--active-color);
 }
 
 .costomers_svg {
