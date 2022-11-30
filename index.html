@@ -1,438 +1,651 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Студія</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <a href="index.html" class="logo"> <span>Web</span>Studio </a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="index.html">Студія</a></li>
-            <li><a href="portfolio.html">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li>
-            
-            <a href="mailto:info@devstudio.com"><svg class="svg_letter">
-              <use xlink:href="images/icons.svg#icon-letter"></use>
-            </svg>info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111">
-              <svg class="svg_phone">
-                <use xlink:href="images/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="title-button">Замовити послугу</button>
-      </section>
-      <section class="benefits container section">
-        <ul>
-          <li>
-            <a href="#">
-              <svg class="about_svg">
-                <use xlink:href="images/icons.svg#icon-Group-1"></use>
-              </svg>
-            </a>
-            <h2>Увага до деталей</h2>
-            <p>
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="about_svg">
-                <use xlink:href="images/icons.svg#icon-Group-2"></use>
-              </svg>
-            </a>
-            <h2>Пунктуальність</h2>
-            <p>
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="about_svg">
-                <use xlink:href="images/icons.svg#icon-Group-3"></use>
-              </svg>
-            </a>
-            <h2>Планування</h2>
-            <p>
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="about_svg">
-                <use xlink:href="images/icons.svg#icon-Group-4"></use>
-              </svg>
-            </a>
-            <h2>Сучасні технології</h2>
-            <p>
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="occupation container">
-        <h2 class="occupation-title">Чим ми займаємось</h2>
-        <ul>
-          <li class="ourwork_item">
-            <img
-              src="images/work_left.jpg"
-              alt="Створення сайту"
-              width="370"
-              height="294"
-            />
-              <div class="ourwork_aside">
-                <p class="aside_text">Десктопні програми</p>
-              </div>
-          </li>
+/* Reset */
+ul{
+	margin: 0;
+	padding: 0;
+}
 
-          <li class="ourwork_item">
-            <img
-              src="images/work_mid.jpg"
-              alt="Оптимізація сайтів під смартфони"
-              width="370"
-              height="294"
-            />
-            <div class="ourwork_aside">
-              <p class="aside_text">Мобільні додатки</p>
-            </div>
-          </li>
+li{
+	list-style-type: none;
+}
 
-          <li class="ourwork_item">
-            <img
-              src="images/work_right.jpg"
-              alt="Підбір кольорів для вашого сайту"
-              width="370"
-              height="294"
-            />
-            <div class="ourwork_aside">
-              <p class="aside_text">Дизайнерські рішення</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="team-section section">
-        <div class="container">
-          <h2>Наша команда</h2>
-          <ul class="team-list">
-            <li class='worker'>
-              <img
-                src="images/worker_igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
-              <div class="team-list-desk">
-                <h3>Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
-                <ul class="list_svg">
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use
-                          class="icon_svg"
-                          xlink:href="images/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class='worker'>
-              <img
-                src="images/worker_olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
-              <div class="team-list-desk">
-                <h3>Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>
-                <ul class="list_svg">
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use
-                          class="icon_svg"
-                          xlink:href="images/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class='worker'>
-              <img
-                src="images/worker_mikola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
-              <div class="team-list-desk">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>
-                <ul class="list_svg">
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use
-                          class="icon_svg"
-                          xlink:href="images/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class='worker'>
-              <img
-                src="images/worker_mikhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
-              <div class="team-list-desk">
-                <h3>Михайло Єрмаков</h3>
-                <p>UI Designer</p>
-                <ul class="list_svg">
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use
-                          class="icon_svg"
-                          xlink:href="images/icons.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="item_svg">
-                    <a class="link_svg" href="#">
-                      <svg class="ourteam_svg">
-                        <use xlink:href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section_customers">
-        <div class="container">
-          <h2 class="costomers_title">Постійні клієнти</h2>
-          <ul class="costomers_list">
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-yaco"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-tagline"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-company"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-foster"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-brand"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="costimers_link" href="#">
-                <svg class="costomers_svg">
-                  <use xlink:href="images/icons.svg#icon-company_company"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer_box">
-          <div class="footer_main">
-            <a href="#" class="logo footer-logo"> <span>Web</span>Studio </a>
-            <address class="contacts">
-              <ul>
-                <li>
-                  <a
-                    class="location"
-                    href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265961,30.5383429,18z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="mg-top">
-                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="mg-top">
-                  <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div>
-            <h2 class="footer_title">Приєднуйся</h2>
-            <ul class="footer_svg_list">
-              <li>
-                <a class="footer_svg_link" href="#">
-                  <svg class="footer_svg">
-                    <use xlink:href="images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer_svg_link" href="#">
-                  <svg class="footer_svg">
-                    <use xlink:href="images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer_svg_link" href="#">
-                  <svg class="footer_svg">
-                    <use xlink:href="images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer_svg_link" href="#">
-                  <svg class="footer_svg">
-                    <use xlink:href="images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+a{
+	text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0px;
+}
+
+
+:root{
+	--primary-color: #212121;
+	--active-color: #2196F3;
+	--white: #FFFFFF;
+    --black: #000000;
+	--blue: #2196F3;
+    --gray: #757575;
+    --darkgray: #212121;
+    --dimwite: #F5F4FA;
+    --dimgray: #FFFFFF60;
+    --section1: #2F303A;
+    --section2: #E5E5E5;
+    --section3: #E5E5E5;
+    --section4: #F5F4FA;
+    --footer: #2F303A;
+    --portfoliosection: #E5E5E5;
+    --about_svg: #AFB1B8;
+}
+
+/* Body */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, Verdana, Arial, Helvetica, sans-serif;
+	color: var(--primary-color);
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section{
+	padding: 94px 0;
+}
+
+ /* Header transmission*/
+ .header .container{
+	display: flex;
+}
+
+
+.nav-list,
+.header-contacts{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nav-list li,
+.header-contacts li{
+	margin-left: 50px;
+}
+
+.nav-list li:first-child,
+.header-contacts li:first-child{
+	margin-left: 0px;
+}
+
+.nav,
+.header-contacts{
+	margin: auto 0;
+}
+
+.header-contacts{
+	margin-left: auto;
+}
+
+/* Header */
+ .header{
+ 	border-bottom: 1px solid #ECECEC;
+ }
+
+
+.logo{
+	font-family:Raleway, Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	padding: 25px 0;
+	margin-right: 93px;
+}
+
+.logo span{
+	color: var(--active-color);
+}
+
+.nav-list a{
+	color: var(--primary-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.17;
+}
+
+.nav-list a:hover{
+	color: var(--active-color);
+}
+
+.header-contacts a{
+	color: #757575;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.17;
+}
+
+.header-contacts a:hover{
+	color: var(--active-color);
+}
+
+.contacts a:hover{
+	color: var(--active-color);
+}
+
+ /* Hero */
+.hero{
+	color: #fff;
+	letter-spacing: 0.06em;
+	background-color: #2F303A;
+	font-weight: 900;
+	font-size: 44px;
+	padding: 200px 0;
+	line-height: 1.36;
+	background-image: url(../images/gradient.png), url(../images/hero_bg.jpg);
+	height: 200px;
+}
+
+.title{
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	width: 780px;
+	margin: 0 auto;
+}
+
+.title-button{
+	font-family: Roboto;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	background-color: #2196F3;
+	padding: 10px 32px;
+	border: 0;
+	border-radius: 4px;
+	display: block;
+	margin: 20px auto;
+	cursor: pointer
+}
+
+.team-section{
+	background-color: #F5F4FA;
+}
+/* benefits */
+.benefits ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.benefits li{
+	width: 270px;
+}
+
+.benefits h2{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.17;
+}
+
+.benefits p{
+	margin-top: 10px;
+	color: #757575;
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+ /*occupation*/
+.occupation{
+	padding-bottom: 99px;
+}
+
+.occupation ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.occupation-title{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+ /*team-section*/
+.team-section ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.team-section h2{
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.17;
+}
+
+
+.team-list-desk{
+	padding: 30px 0;
+	text-align: center;
+
+}
+
+.team-list-desk h3{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.17;
+	padding-bottom: 10px;
+	letter-spacing: 0.03em;
+}
+
+
+.team-list-desk p{
+	color: #757575;
+	font-size: 16px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+}
+
+.team-list .worker{
+	background-color: #fff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+}
+
+ /* Footer */
+.footer{
+	padding: 60px 0;
+	background-color: #2F303A;
+}
+
+.footer .logo{
+	color: #fff;
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+.contacts .location{
+	color: #fff;
+	font-weight: 400;
+}
+
+.contacts{
+	margin-top: 20px;
+}
+
+
+.contacts li{
+	height: 21px;
+}
+
+.contacts a{
+	color: #757575;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+
+}
+
+.contacts .mg-top{
+	margin-top: 9px;
+}
+
+/* Portfolio */
+.filter{
+	padding-bottom: 50px;
+}
+
+.filter ul{
+	display: flex;
+	justify-content: center;
+}
+
+.filter button{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.625;
+	background-color:#F5F4FA;
+	padding: 6px 22px;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 8px;
+}
+
+.filter button:hover{
+	font-family: Roboto;
+	color: #fff;
+	background-color: var(--active-color);
+}
+
+.projects{
+ 	display: flex;
+ 	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.projects li{
+	border: 1px solid #EEEEEE;
+	width: 370px;
+}
+
+.portfolio-text-items{
+	padding: 20px 24px;
+}
+
+.portfolio-text-items h3{
+	font-size: 18px;
+	line-height: 2;
+	padding-bottom: 4px;
+}
+
+.portfolio-text-items p{
+	color: #757575;
+	font-size: 16px;
+	line-height: 1.875;
+}
+
+.svg_letter {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--gray);
+}
+
+.svg_phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--gray);
+}
+
+.about_svg {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--section4);
+    margin-bottom: 30px;
+}
+
+.list_svg {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px 0px 32px;
+}
+
+.link_svg {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.link_svg:hover {
+    background-color: var(--blue);
+}
+
+.link_svg:hover svg {
+    fill: var(--white);
+}
+
+.link_svg:focus {
+    background-color: var(--blue);
+}
+
+.link_svg:focus svg {
+    fill: var(--blue);
+}
+
+.ourteam_svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--about_svg);
+    display: block;
+}
+
+.section_customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.costomers_title{
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    text-align: center;
+    font-weight: 700;
+    color: var(--darkgray);
+    line-height: 1.16;
+    font-size: 36px;
+}
+
+.costomers_list {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.costimers_link {
+    height: 92px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.costimers_link:hover{
+    border: 1px solid var(--blue);
+}
+
+.costimers_link:hover svg {
+    fill: var(--blue);
+}
+
+.costimers_link:focus{
+    border: 1px solid var(--blue);
+}
+
+.costimers_link:focus svg {
+    fill: var(--white);
+}
+
+.costomers_svg {
+    width: 106px;
+    height: 60px;
+    display: block;
+    fill: var(--about_svg);
+}
+
+
+.footer_title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer_svg_list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_svg_link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer_svg_link:hover {
+    background-color: var(--blue);
+}
+
+.footer_svg_link:focus {
+    background-color: var(--blue);
+}
+
+.footer_svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+    display: block;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer);
+}
+
+.footer_box {
+    display: flex;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+.footer_main {
+	margin-right: 80px;
+}
+
+.ourwork_item {
+    position: relative;
+}
+
+.ourwork_aside {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    color: #fff;
+}
+
+.section_completedworks {
+    color: var(--portfoliosection);
+    padding-top: 50px;
+    padding-bottom: 64px;
+}
+
+.completedworks_title {
+    display: none;
+}
+
+.completedworks_list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.completedworks_item {
+    background-color: var(--white);
+    width: 370px;
+    height: 404px;
+}
+
+.completedworks_item:hover .completedworks_aside {
+    transform: translatey(-100%);
+}
+
+.completedworks_item:hover .completedworks_desk {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.completedworks_foto {
+    display: block;
+}
+
+.completedworks_icon {
+    position: relative;
+    height: 298px;
+    width: 370;
+
+    overflow: hidden;
+}
+
+.completedworks_aside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    transition: transform 250ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completedworks_subtext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-left: 24px;
+
+}
+
+.completedworks_desk {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none; 
+    transition: box-shadow 250ms;
+}
+
+.completedworks_subtitle {
+    width: 322px;
+    height: 36px;
+    font-weight: 700;
+    color: var(--darkgray);
+    line-height: 2;
+    font-size: 18px;
+}
+
+.completedworks_text {
+    margin: 0;
+    width: 322px;
+    height: 30px;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 1.87;
+    font-size: 16px;
+}
