@@ -447,15 +447,15 @@ body{
 }
 
 .costimers_link:hover{
-    border: 1px solid var(--blue);
+    border: 1px solid var(--active-color);
 }
 
 .costimers_link:hover svg {
-    fill: var(--white);
+    fill: var(--active-color);
 }
 
 .costimers_link:focus{
-    border: 1px solid var(--blue);
+    border: 1px solid var(--active-color);
 }
 
 .costimers_link:focus svg {
@@ -649,4 +649,3 @@ body{
     line-height: 1.87;
     font-size: 16px;
 }
-
